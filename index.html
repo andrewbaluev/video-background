@@ -18,6 +18,8 @@
     <link rel="icon" type="image/png" sizes="16x16" href="img/favicon/favicon-16x16.png"> -->
 
     <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
 
     <!-- Vendor CSS Files -->
     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
@@ -25,7 +27,6 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/glightbox/dist/css/glightbox.min.css" />
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-wEmeIV1mKuiNpC+IOBjI7aAzPcEZeedi5yW5f2yOq55WWLwNGmvvx4Um1vskeMj0" crossorigin="anonymous">
-
 
     <!-- Main CSS File -->
     <link rel="stylesheet" href="assets/css/style.css">
@@ -35,38 +36,49 @@
 </head>
 
 <body>
-
     <header class="header" id="header">
         <div class="container">
             <div class="header-wrapper">
                 <div class="logo">
                     <a href="#!" class="logo__link">LOGO</a>
                 </div>
-                <nav class="header-nav">
+                <nav class="header-nav" id="header-nav">
                     <ul class="header-nav__list">
                         <li class="header-nav__item">
-                            <a href="#!" class="header-nav__link">Главная</a>
+                            <a href="#intro" class="header-nav__link">Главная</a>
                         </li>
                         <li class="header-nav__item">
-                            <a href="#!" class="header-nav__link">Портфолио</a>
+                            <a href="#about" class="header-nav__link">Про меня</a>
                         </li>
                         <li class="header-nav__item">
-                            <a href="#!" class="header-nav__link">Контакты</a>
+                            <a href="#portfolio" class="header-nav__link">Портфолио</a>
+                        </li>
+                        <li class="header-nav__item">
+                            <a href="#gallery" class="header-nav__link">Галлерея</a>
+                        </li>
+                        <li class="header-nav__item">
+                            <a href="#contacts" class="header-nav__link">Контакты</a>
                         </li>
                     </ul>
+                    <button class="close">Close</button>
                 </nav>
+                <button class="open">Open</button>
             </div>
         </div>
     </header>
 
-    <div class="intro">
+    <div class="intro" id="intro">
         <div class="intro__content">
             <div class="container">
-                <h2>Привет, я <span class="typed"
+                <h2 class="intro__title">Привет, я <span class="typed"
                         data-typed-items="Алина, фотограф, ретушер, дизайнер, фрилансер"></span></h2>
-                <p>Фотограф, Ретушер, Дизайнер, Фрилансер</p>
+                <p class="intro__subtitle">Фотограф, Ретушер, Дизайнер, Фрилансер</p>
                 <!-- <ul class="list-unstyled list-social">
-                    <li><a href="https://www.facebook.com/" target="_blank"><i class="bi bi-facebook"></i></a></li>
+                    <li>
+                        <a href="https://www.facebook.com/" target="_blank">
+                            svg...
+                        </a>
+                    </li>
                     <li><a href="https://www.twitter.com/home" target="_blank"><i class="bi bi-twitter"></i></a></li>
                     <li><a href="https://www.instagram.com/" target="_blank"><i class="bi bi-instagram"></i></a></li>
                     <li><a href="https://www.linkedin.com/" target="_blank"><i class="bi bi-linkedin"></i></a></li>
@@ -79,10 +91,8 @@
         </div>
     </div>
 
-
     <main class="main">
-
-        <section class="section about">
+        <section class="section about" id="about">
             <div class="container">
                 <div class="section-header">
                     <h2 class="section-title">Про меня</h2>
@@ -121,7 +131,7 @@
             </div>
         </section>
 
-        <section class="section portfolio">
+        <section class="section portfolio" id="portfolio">
             <div class="container">
                 <div class="section-header">
                     <h2 class="section-title">Портфолио</h2>
@@ -174,7 +184,46 @@
             </div>
         </section>
 
-        <section class="section contacts">
+        <section class="section gallery" id="gallery">
+
+            <div class="container">
+                <div class="section-header">
+                    <h2 class="section-title">Галлерея</h2>
+                    <p class="section-subtitle">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Illum,
+                        consequuntur?</p>
+                </div>
+            </div>
+
+            <div class="swiper-container">
+                <div class="swiper-wrapper">
+
+                    <div class="swiper-slide"><img src="assets/img/slider/1.jpg" alt="1" class="swiper-img"></div>
+                    <div class="swiper-slide"><img src="assets/img/slider/2.jpg" alt="2" class="swiper-img"></div>
+                    <div class="swiper-slide"><img src="assets/img/slider/3.jpg" alt="3" class="swiper-img"></div>
+                    <div class="swiper-slide"><img src="assets/img/slider/4.jpg" alt="4" class="swiper-img"></div>
+                    <div class="swiper-slide"><img src="assets/img/slider/5.jpg" alt="5" class="swiper-img"></div>
+                    <div class="swiper-slide"><img src="assets/img/slider/6.jpg" alt="6" class="swiper-img"></div>
+                    <div class="swiper-slide"><img src="assets/img/slider/7.jpg" alt="7" class="swiper-img"></div>
+                    <div class="swiper-slide"><img src="assets/img/slider/8.jpg" alt="8" class="swiper-img"></div>
+                    <div class="swiper-slide"><img src="assets/img/slider/9.jpg" alt="9" class="swiper-img"></div>
+                    <div class="swiper-slide"><img src="assets/img/slider/10.jpg" alt="10" class="swiper-img"></div>
+                    <div class="swiper-slide"><img src="assets/img/slider/11.jpg" alt="11" class="swiper-img"></div>
+                    <div class="swiper-slide"><img src="assets/img/slider/12.jpg" alt="12" class="swiper-img"></div>
+                    <div class="swiper-slide"><img src="assets/img/slider/13.jpg" alt="13" class="swiper-img"></div>
+                    <div class="swiper-slide"><img src="assets/img/slider/14.jpg" alt="14" class="swiper-img"></div>
+                    <div class="swiper-slide"><img src="assets/img/slider/15.jpg" alt="15" class="swiper-img"></div>
+
+                </div>
+
+                <div class="swiper-button-prev"></div>
+                <div class="swiper-button-next"></div>
+
+            </div>
+
+
+        </section>
+
+        <section class="section contacts" id="contacts">
             <div class="container">
                 <div class="section-header">
                     <h2 class="section-title">Контакты</h2>
@@ -185,9 +234,12 @@
                 <div class="contacts-wrapper">
                     <form action="forms/contact.php" method="post" role="form" class="php-email-form">
                         <input class="form-control" type="text" name="name" id="name" placeholder="Ваше Имя" required>
-                        <input class="form-control" type="email" name="email" id="email" placeholder="Ваш Емейл" required> 
-                        <input class="form-control" type="text" name="subject" id="subject" placeholder="Тема письма" required>
-                        <textarea class="form-control" name="message" id="message" placeholder="Текст сообщения" required></textarea>
+                        <input class="form-control" type="email" name="email" id="email" placeholder="Ваш Емейл"
+                            required>
+                        <input class="form-control" type="text" name="subject" id="subject" placeholder="Тема письма"
+                            required>
+                        <textarea class="form-control" name="message" id="message" placeholder="Текст сообщения"
+                            required></textarea>
                         <button class="form-control" type="submit">Отправить</button>
                     </form>
                 </div>
@@ -197,6 +249,9 @@
 
     <footer class="footer"></footer>
 
+    <div id="preloader"></div>
+
+    <a href="#intro" class="back-to-top">Up</a>
 
     <!-- Vendor JS Files -->
     <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
