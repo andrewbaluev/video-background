@@ -1,0 +1,20 @@
+@import "vendor/normalize/import-now";
+
+@import "mixin";
+@import "variables";
+@import "fonts";
+@import "ui";
+
+@import "base/visually-hidden";
+@import "base/back-to-top";
+@import "base/preloader";
+@import "base/burger";
+
+@import "blocks/header";
+@import "blocks/video";
+@import "blocks/intro";
+@import "blocks/about";
+@import "blocks/portfolio";
+@import "blocks/gallery";
+@import "blocks/php-email-form";
+
