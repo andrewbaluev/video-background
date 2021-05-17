@@ -1,0 +1,15 @@
+.btn {
+    padding: 15px 50px;
+    font-size: 12px;
+    text-transform: uppercase;
+    font-weight: 700;
+    letter-spacing: 2.5px;
+    background-color: #f0f0f0;
+    border: none;
+    border-radius: 27px;
+    transition: background-color .3s ease;
+
+    &:hover {
+        background-color: darken($color: #f0f0f0, $amount: 5%);
+    }
+}

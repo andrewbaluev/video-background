@@ -1,0 +1,21 @@
+.reservation {
+    padding: 50px 0;
+
+    &-wrapper {
+        width: 1000px;
+        margin: 0 auto;
+        text-align: center;
+    }
+
+    &__title {
+        margin-bottom: 40px;
+        text-align: center;
+        font-size: 24px;
+    }
+
+    &__text {
+        margin-bottom: 20px;
+        text-align: center;
+        font-size: 14px;
+    }
+}
